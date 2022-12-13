@@ -19,7 +19,7 @@ public class PlayerJump : MonoBehaviour
         playerInputs.Player.Jump.performed += Jump;
         //playerInputs.Player.Movement.performed += Movement_performed;
     }
-    private void FixedUpdate()
+    private void Update()
     {
         Vector2 inputVector = playerInputs.Player.Movement.ReadValue<Vector2>();
         float speed  = 10f;
