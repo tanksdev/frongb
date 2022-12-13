@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Guts
   - Spawnpoint
+  - Frog
+  - DangerFrog
   layers:
   - Default
   - TransparentFX
