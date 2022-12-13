@@ -22,7 +22,7 @@ public class PlayerJump : MonoBehaviour
     private void FixedUpdate()
     {
         Vector2 inputVector = playerInputs.Player.Movement.ReadValue<Vector2>();
-        float speed  = 5f;
+        float speed  = 10f;
         sphereRigidbody.AddForce(new Vector3(inputVector.x, 0, inputVector.y) * speed, ForceMode.Force);
     }
  /*   private void Movement_performed(InputAction.CallbackContext context)

@@ -8,6 +8,8 @@ TagManager:
   - Spawnpoint
   - Frog
   - DangerFrog
+  - spawnpointGood
+  - spawnpointBad
   layers:
   - Default
   - TransparentFX
