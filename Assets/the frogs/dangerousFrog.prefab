@@ -3543,6 +3543,7 @@ GameObject:
   - component: {fileID: 136685980256629510}
   - component: {fileID: 1328881879113148443}
   - component: {fileID: 8232331610898880660}
+  - component: {fileID: -1023599501916365856}
   m_Layer: 0
   m_Name: dangerousFrog
   m_TagString: Frog
@@ -3640,6 +3641,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-1023599501916365856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644373995442134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ec511fcc3b3dfb4fb31dfdfddabdb03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  safeFrogpos: {fileID: 4691832418928178, guid: 8293f8c2e9b0f9646b9a77b8789bf68b, type: 3}
 --- !u!1 &1651717217587476
 GameObject:
   m_ObjectHideFlags: 0
