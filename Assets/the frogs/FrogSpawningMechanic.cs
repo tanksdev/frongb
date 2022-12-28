@@ -35,12 +35,31 @@ public class FrogSpawningMechanic : MonoBehaviour
             Instantiate(safeFrog, Spawnpoint[i].transform);
         }
     }
-    void RemoveFrogs()
+    void RemoveGoodFrogs()
     {
         for(int i = Spawnpoint.Count - 1; i >= 0; i--)
         {
             bool coinFlip = (Random.Range(0, 2) == 0);
-            if(coinFlip == true){
+            if(coinFlip == true)
+            {
+                Spawnpoint.RemoveAt(i);
+            }
+        }
+    }
+    void SpawnBadFrogs()
+    {
+        for(int i = 0; i < Spawnpoint.Count; i++)
+        {
+            Instantiate(dangerFrog, Spawnpoint[i].transform);
+        }
+    }
+    void RemoveBadFrogs()
+    {
+        for(int i =Spawnpoint.Count - 1; i >= 0; i--)
+        {
+            bool coinFlip = (Random.Range(0, 2) == 0);
+            if(coinFlip == true)
+            {
                 Spawnpoint.RemoveAt(i);
             }
         }
@@ -48,7 +67,7 @@ public class FrogSpawningMechanic : MonoBehaviour
     IEnumerator Generate()
     {
         yield return new WaitForSeconds(1);
-        RemoveFrogs();
+        RemoveGoodFrogs();
         yield return new WaitForSeconds(1);
         SpawnGoodFrogs();
     }
