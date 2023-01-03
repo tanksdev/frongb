@@ -50,7 +50,7 @@ public class FrogSpawningMechanic : MonoBehaviour
     {
         for(int i = 0; i < Spawnpoint.Count; i++)
         {
-            Instantiate(dangerFrog, Spawnpoint[i].transform);
+            Instantiate(dangerousFrog, Spawnpoint[i].transform);
         }
     }
     void RemoveBadFrogs()
