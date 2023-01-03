@@ -8,14 +8,12 @@ public class PlayerJump : MonoBehaviour
     private Rigidbody sphereRigidbody;
     private PlayerInput playerInput;
     private PlayerInputs playerInputs;
-
     private void Awake()
     {
         sphereRigidbody = GetComponent<Rigidbody>();
         //the player
         playerInput = GetComponent<PlayerInput>();
         //references input system
-
         playerInputs = new PlayerInputs();
         playerInputs.Player.Enable();
         //starts the player input script
