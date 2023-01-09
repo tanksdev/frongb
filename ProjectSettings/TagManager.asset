@@ -10,6 +10,8 @@ TagManager:
   - DangerFrog
   - spawnpointGood
   - spawnpointBad
+  - score
+  - Manager
   layers:
   - Default
   - TransparentFX
